@@ -8,6 +8,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -25,6 +27,18 @@ public class LoginViewController {
 
     @FXML
     private Label errMsg;
+
+    @FXML
+    void initialize() {
+        usernameTextbox.setOnKeyPressed(this::handleKeyPressed);
+        passwordTextbox.setOnKeyPressed(this::handleKeyPressed);
+    }
+
+    private void handleKeyPressed(KeyEvent event) {
+        if (event.getCode() == KeyCode.ENTER) {
+            LoginButtonOnAction(new ActionEvent());
+        }
+    }
 
     @FXML
     void LoginButtonOnAction(ActionEvent event) {
@@ -45,5 +59,4 @@ public class LoginViewController {
             errMsg.setText("Invalid username or password");
         }
     }
-
 }

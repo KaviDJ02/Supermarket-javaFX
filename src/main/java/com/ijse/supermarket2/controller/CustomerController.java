@@ -22,13 +22,10 @@ import java.sql.SQLException;
 public class CustomerController {
 
     @FXML
-    private Button BackButton;
-
-    @FXML
     private TableColumn<CustomerData, String> CIDColumn;
 
     @FXML
-    private Label CIDLabel;
+    private TextField CIDLabel;
 
     @FXML
     private AnchorPane CustomerAnchorpane;
@@ -85,7 +82,6 @@ public class CustomerController {
     private void connectDatabase() {
         try {
             connection = db.getConnection();
-            System.out.println("Database connection established successfully.");
         } catch (SQLException e) {
             e.printStackTrace();
             System.err.println("Failed to establish database connection: " + e.getMessage());

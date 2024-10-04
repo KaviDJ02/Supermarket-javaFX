@@ -18,7 +18,6 @@
         <TextField fx:id="NICTextbox" layoutX="143.0" layoutY="105.0" prefHeight="26.0" prefWidth="258.0" />
         <TextField fx:id="EmailTextbox" layoutX="143.0" layoutY="139.0" prefHeight="26.0" prefWidth="258.0" />
         <TextField fx:id="PhoneTextbox" layoutX="143.0" layoutY="173.0" prefHeight="26.0" prefWidth="258.0" />
-        <Label fx:id="CIDLabel" layoutX="143.0" layoutY="39.0" text="1" />
         <Button fx:id="GenerateReportButton" layoutX="50.0" layoutY="228.0" mnemonicParsing="false" onAction="#onGenerateReportButtonAction" prefHeight="26.0" prefWidth="155.0" text="Generate Report" />
         <Button fx:id="ResetButton" layoutX="222.0" layoutY="228.0" mnemonicParsing="false" onAction="#onResetButtonAction" prefHeight="26.0" prefWidth="82.0" text="Reset" />
         <Button fx:id="DeleteButton" layoutX="325.0" layoutY="228.0" mnemonicParsing="false" onAction="#onDeleteButtonAction" prefHeight="26.0" prefWidth="82.0" text="Delete" />
@@ -33,5 +32,6 @@
                 <TableColumn fx:id="PhoneColumn" prefWidth="115.99996948242188" text="Phone" />
             </columns>
         </TableView>
+      <TextField fx:id="CIDLabel" layoutX="143.0" layoutY="33.0" prefHeight="26.0" prefWidth="114.0" />
     </children>
 </AnchorPane>

@@ -16,10 +16,11 @@ public class MainViewController {
     void navigateCustomerOnAction(ActionEvent event) {
         navigateTo("/view/CustomerView.fxml");
     }
-//    @FXML
-//    void navigateItemOnAction(ActionEvent event) {
-//        navigateTo("/view/ItemView.fxml");
-//    }
+    @FXML
+    void navigateItemOnAction(ActionEvent event) {
+        navigateTo("/view/ItemView.fxml");
+    }
+
     @FXML
     void navigateOrdersOnAction(ActionEvent event) {
         navigateTo("/view/OrdersView.fxml");
