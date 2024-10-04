@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="523.0" prefWidth="867.0" stylesheets="@../css/Login.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ijse.supermarket2.controller.LoginViewController">
+    <children>
+        <Label layoutX="406.0" layoutY="67.0" styleClass="login-title" text="Login">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="usernameTextbox" layoutX="308.0" layoutY="223.0" prefHeight="32.0" prefWidth="250.0" promptText="username" styleClass="login-textfield" />
+        <Button fx:id="loginButton" layoutX="308.0" layoutY="381.0" mnemonicParsing="false" onAction="#LoginButtonOnAction" prefHeight="32.0" prefWidth="250.0" styleClass="login-button" text="Login" />
+        <PasswordField fx:id="passwordTextbox" layoutX="308.0" layoutY="274.0" prefHeight="32.0" prefWidth="250.0" promptText="password" styleClass="login-textfield" />
+      <Label fx:id="errMsg" alignment="CENTER" contentDisplay="CENTER" layoutX="268.0" layoutY="333.0" prefHeight="18.0" prefWidth="333.0" textFill="#ef0303" />
+    </children>
+</AnchorPane>
